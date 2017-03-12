@@ -1,0 +1,23 @@
+n 1 New_York
+n 2 Los_Angeles
+n 3 Chicago
+n 4 Houston
+n 5 Texas
+n 6 Chicago
+n 7 New_Jersey
+n 8 Seattle
+n 9 Atlanta
+n 10 Washington
+e 1 2 2800
+e 1 3 795
+e 2 3 2020
+e 3 4 1085
+e 1 4 1635
+e 2 4 1550
+e 2 5 1500
+e 6 7 700
+e 7 9 600
+e 1 10 300
+e 4 10 600
+e 3 8 1400
+e 3 9 760

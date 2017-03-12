@@ -1,0 +1,15 @@
+Basic design of my program:
+- Originally I planned to create a more focused application, like modeling Amtrak routes, while extending it into a geographic graph application that can work for geographic graph and other types of graph that is formed of String and Double. Due to the original plan, my graph is <String, Double>, not generic. However I couldn't get to that so this is more of a generic graph now. It can work for modeling routes if you have complex data of routes, that I do not have time to prepare
+- The basics of my application is that you can load a graph file, edit it in a GUI, and save it to be edited later. With the original focus, I included the option for choosing between x,y coordinates or longitude/latitude (the formular probably doesn't work anymore, even though I included it in the graph canvas
+- on reading file: since I got confused with using space as file seperator (location names have spaces to), I created the option that you can choose the seperator in the argument. java GraphGUI ",", for example if it's a csv file.
+- If the original data file does not have coordinates, it will be randomly generated. If the original data file does not have edge data, default is the euclidean distance. Cost of the edge must be edge data.
+- Module Addpoint: create new nodes by clicking. 
+- Change node data: Set data by typing in the text field and click on the node you want to change
+- Module removePoint: remove by clicking
+- Add edge: drag one node to another to add, redo to remove
+- Set edge data: type textfield and drag along the edge
+- Perform DFT, BFT, and Shortest path based on the button. After doing shortest path, you can click on a node you want to go to and the path to that specific node is shown in black
+- reset: removes all the traversal effects 
+- save file: save the file, type file name on the text field.
+- You can change coordinates to long/lat if you wish, though the formula is probably off
+- I created a bunch of hashtables to map the information, since I didn't know that it would be better to create subclasses until when it's too late. Therefore, I made my shortest path method a seperate class and run it in GraphGUI (you wrote something similar to that on piazza, so I got confused). I can put it into Graph again but didn't have time to.
